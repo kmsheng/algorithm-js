@@ -23,7 +23,6 @@ export default function isPalindromePermutation(str) {
 
   const rows = Object.keys(charMap)
     .map(char => ({ char, count: charMap[char] }))
-    .sort((a, b) => b.count - a.count)
 
   const evens = []
   const odds = []
