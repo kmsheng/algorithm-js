@@ -6,7 +6,7 @@
 
 export default function rmNode(node) {
   let target = node
-  while (true) {
+  while (target.next) {
     target.value = target.next.value
     if (target.next && (! target.next.next)) {
       target.next = null
